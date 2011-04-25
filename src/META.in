@@ -1,0 +1,6 @@
+name="voaacenc"
+version="@VERSION@"
+description="OCaml bindings for voaacenc"
+requires="@requires@"
+archive(byte)="voaacenc.cma"
+archive(native)="voaacenc.cmxa"

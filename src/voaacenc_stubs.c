@@ -155,8 +155,8 @@ CAMLprim value ocaml_voaacenc_encode(value e, value data, value ofs, value len)
 
   encoder_t *enc = Encoder_val(e);
 
-  VO_CODECBUFFER input, output;
-  VO_AUDIO_OUTPUTINFO output_info;
+  VO_CODECBUFFER input = { 0 }, output = { 0 };
+  VO_AUDIO_OUTPUTINFO output_info = { 0 };
 
   input.Buffer = malloc(Int_val(len));
   if (input.Buffer == NULL)
